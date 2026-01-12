@@ -12,6 +12,7 @@ repository = "https://github.com/ELO-I/typst-optimal-resume-template"
 keywords = ["resume", "cv", "academic", "professional", "ATS"]
 categories = ["cv"]
 disciplines = ["computer-science"]
+compiler = "0.12.0"
 exclude = [
   ".github",
   "docs",
