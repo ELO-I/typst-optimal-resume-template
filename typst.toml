@@ -2,17 +2,16 @@
 
 [package]
 name = "optimal-resume"
-version = "0.1.0"
-entrypoint = "template.typ"
+version = "0.1.1"
+entrypoint = "src/lib.typ"
 authors = ["Issam El Ouiazzani"]
 license = "Unlicense"
 description = "A programmatic, high-performance resume template designed to solve alignment frustrations. Optimal for academic and professional CVs, with ATS compatibility."
 homepage = "https://github.com/ELO-I/typst-optimal-resume-template"
 repository = "https://github.com/ELO-I/typst-optimal-resume-template"
 keywords = ["resume", "cv", "academic", "professional", "ATS"]
-categories = ["office", "cv"]
+categories = ["cv"]
 disciplines = ["computer-science"]
-#compiler = ""
 exclude = [
   ".github",
   "docs",
@@ -23,6 +22,6 @@ exclude = [
 ]
 
 [template]
-path = "."
+path = "template"
 entrypoint = "main.typ"
 thumbnail = "thumbnail.png"

@@ -7,8 +7,8 @@ Optimized to be compact, easy to maintain and compatible with ATS systems.
 
 ## Project Structure
 
-1. **`template.typ`**: Contains the design logic, icons, and layout functions.
-2. **`main.typ`**: Contains your personal data, experience, and projects. This is the only file you need to edit.
+1. **`src/`**: Contains the design logic and layout functions.
+2. **`main.typ`**: An example file showing how to use the template.
 
 ## Sample 
 ![Sample](thumbnail.png)
@@ -26,10 +26,9 @@ A simple example to get you started with the structure of each section !
 * #cv-edu(school: "", degree: "", start: "", end: "", relevant: [])
 * #cv-work(company: "", title: "", location: "", start: "", end: "", points: ())
 * #cv-project(name: "", tech: "", github: "", url: "", start: "", end: "", points: ())
-* #cv-skill(category: "", items: "")
 */
 
-#import "template.typ": *
+#import "@preview/optimal-resume:0.1.1": *
 
 #show: project
 

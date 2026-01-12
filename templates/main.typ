@@ -1,4 +1,4 @@
-#import "template.typ": *
+#import "@preview/optimal-resume:0.1.1": *
 
 #show: project
 
@@ -7,7 +7,7 @@
   email: "torvalds@linux-foundation.org",
   phone: "+1 234 567-8910",
   linkedin: "linustorvalds",
-  github: "torvalds"
+  github: "torvalds",
 )
 
 #cv-section("Summary")
@@ -25,8 +25,8 @@ Software Engineer and Architect of the world's most critical open-source infrast
     [Direct the development and release cycle of the *Linux Kernel*, managing over 30 million lines of code],
     [Coordinate contributions from *thousands of global developers* and tech giants (Intel, Google, AMD)],
     [Enforce strict coding standards and performance requirements to maintain *99.99% system stability*],
-    [Design architectural solutions for memory management, process scheduling, and hardware abstraction]
-  )
+    [Design architectural solutions for memory management, process scheduling, and hardware abstraction],
+  ),
 )
 
 #cv-work(
@@ -38,8 +38,8 @@ Software Engineer and Architect of the world's most critical open-source infrast
   points: (
     [Developed *Code Morphing* software, a dynamic binary translation layer for x86 instruction sets],
     [Optimized VLIW processor performance through low-level firmware and compiler interaction],
-    [Contributed to *power-efficient CPU design* for mobile computing devices]
-  )
+    [Contributed to *power-efficient CPU design* for mobile computing devices],
+  ),
 )
 
 #cv-section("Projects")
@@ -54,8 +54,8 @@ Software Engineer and Architect of the world's most critical open-source infrast
   points: (
     [Created a *POSIX-compliant monolithic kernel* now powering 100% of the world's supercomputers],
     [Implemented high-performance subsystems for networking, filesystems (ext4, Btrfs), and security],
-    [Revolutionized the tech industry by establishing the *GPL-based open-source model*]
-  )
+    [Revolutionized the tech industry by establishing the *GPL-based open-source model*],
+  ),
 )
 
 #cv-project(
@@ -68,8 +68,8 @@ Software Engineer and Architect of the world's most critical open-source infrast
   points: (
     [Designed a *distributed VCS* to replace BitKeeper, prioritizing speed and data integrity],
     [Engineered a unique *content-addressable storage* architecture using SHA-1 hashing],
-    [Adopted by over *90% of software engineers* worldwide as the industry standard]
-  )
+    [Adopted by over *90% of software engineers* worldwide as the industry standard],
+  ),
 )
 
 #cv-project(
@@ -81,8 +81,8 @@ Software Engineer and Architect of the world's most critical open-source infrast
   end: "Present",
   points: (
     [Created an open-source dive log application to track *SCUBA diving data* and decompressions],
-    [Implemented cross-platform support for multiple dive computer hardwares via *libdivecomputer*]
-  )
+    [Implemented cross-platform support for multiple dive computer hardwares via *libdivecomputer*],
+  ),
 )
 
 #cv-section("Technical Skills")
@@ -102,5 +102,5 @@ Software Engineer and Architect of the world's most critical open-source infrast
   degree: "M.S. in Computer Science",
   start: "1988",
   end: "1996",
-  relevant: [Thesis: *Linux: A Portable Operating System*]
+  relevant: [Thesis: *Linux: A Portable Operating System*],
 )
