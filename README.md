@@ -1,69 +1,84 @@
-# The `my-package` Package
-<div align="center">Version 0.1.0</div>
+# Optimal Resume
 
-A short description about the project and/or client.
+**Optimal Resume** is a programmatic, high-performance resume template built with **Typst**. 
 
-## Template adaptation checklist
+This template was made to be able to use reusable functions. You focus on the content; the code handles the typography and alignment.
+Optimized to be compact, easy to maintain and compatible with ATS systems.
 
-- [ ] Fill out `README.md`
-  - Change the `my-package` package name, including code snippets
-  - Check section contents and/or delete sections that don't apply
-- [ ] Check and/or replace `LICENSE` by something that suits your needs
-- [ ] Fill out `typst.toml`
-  - See also the [typst/packages README](https://github.com/typst/packages/?tab=readme-ov-file#package-format)
-- [ ] Adapt Repository URLs in `CHANGELOG.md`
-  - Consider only committing that file with your first release, or removing the "Initial Release" part in the beginning
-- [ ] Adapt or deactivate the release workflow in `.github/workflows/release.yml`
-  - to deactivate it, delete that file or remove/comment out lines 2-4 (`on:` and following)
-  - to use the workflow
-    - [ ] check the values under `env:`, particularly `REGISTRY_REPO`
-    - [ ] if you don't have one, [create a fine-grained personal access token](https://github.com/settings/tokens?type=beta) with [only Contents permission](https://stackoverflow.com/a/75116350/371191) for the `REGISTRY_REPO`
-    - [ ] on this repo, create a secret `REGISTRY_TOKEN` (at `https://github.com/[user]/[repo]/settings/secrets/actions`) that contains the so created token
+## Project Structure
 
-    if configured correctly, whenever you create a tag `v...`, your package will be pushed onto a branch on the `REGISTRY_REPO`, from which you can then create a pull request against [typst/packages](https://github.com/typst/packages/)
-- [ ] remove/replace the example test case
-- [ ] (add your actual code, docs and tests)
-- [ ] remove this section from the README
+1. **`template.typ`**: Contains the design logic, icons, and layout functions.
+2. **`main.typ`**: Contains your personal data, experience, and projects. This is the only file you need to edit.
 
-## Getting Started
+## Sample 
+![Sample](thumbnail.png)
 
-These instructions will get you a copy of the project up and running on the typst web app. Perhaps a short code example on importing the package and a very simple teaser usage.
+## Quick Start
 
-```typ
-#import "@preview/my-package:0.1.0": *
+A simple example to get you started with the structure of each section ! 
 
-#show: my-show-rule.with()
-#my-func()
+```typst
+
+/* * FUNCTION REFERENCE
+* ------------------
+* #cv-header(name: "", email: "", phone: "", linkedin: "", github: "")
+* #cv-section("Title")
+* #cv-edu(school: "", degree: "", start: "", end: "", relevant: [])
+* #cv-work(company: "", title: "", location: "", start: "", end: "", points: ())
+* #cv-project(name: "", tech: "", github: "", url: "", start: "", end: "", points: ())
+* #cv-skill(category: "", items: "")
+*/
+
+#import "template.typ": *
+
+#show: project
+
+#cv-header(
+  name: "Your Name",
+  email: "your.email@provider.com",
+  phone: "+33 6 00 00 00 00",
+  linkedin: "username",
+  github: "username"
+)
+
+#cv-section("Education")
+#cv-edu(
+  school: "University Name",
+  degree: "Master of Science",
+  start: "2022",
+  end: "2024",
+  relevant: [Course A, Course B, Course C]
+)
+
+#cv-section("Experience")
+#cv-work(
+  company: "Company Name",
+  title: "Software Engineer",
+  location: "City, Country",
+  start: "2023",
+  end: "Present",
+  points: (
+    [Accomplishment *key result* one],
+    [Accomplishment *key result* two],
+  )
+)
+
+#cv-section("Projects")
+#cv-project(
+  name: "Project Name",
+  tech: "Tech 1, Tech 2",
+  github: "username/repo", 
+  url: "https://demo.com",  
+  start: "2024",
+  end: "2024",
+  points: (
+    [Developed *feature X* using Y],
+  )
+)
+
+#cv-section("Technical Skills")
+- *Languages:* Python, C, SQL
+- *Tools:* Docker, Git, AWS
+
 ```
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./thumbnail-dark.svg">
-  <img src="./thumbnail-light.svg">
-</picture>
-
-### Installation
-
-A step by step guide that will tell you how to get the development environment up and running. This should explain how to clone the repo and where to (maybe a link to the typst documentation on it), along with any pre-requisite software and installation steps.
-
-```
-$ First step
-$ Another step
-$ Final step
-```
-
-## Usage
-
-A more in-depth description of usage. Any template arguments? A complicated example that showcases most if not all of the functions the package provides? This is also an excellent place to signpost the manual.
-
-```typ
-#import "@preview/my-package:0.1.0": *
-
-#let my-complicated-example = ...
-```
-
-## Additional Documentation and Acknowledgments
-
-* Project folder on server:
-* Confluence link:
-* Asana board:
-* etc...
