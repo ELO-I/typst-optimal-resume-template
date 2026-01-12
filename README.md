@@ -28,7 +28,7 @@ A simple example to get you started with the structure of each section !
 * #cv-project(name: "", tech: "", github: "", url: "", start: "", end: "", points: ())
 */
 
-#import "@preview/optimal-resume:0.1.1": *
+#import "@preview/optimal-resume:0.1.2": *
 
 #show: project
 

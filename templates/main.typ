@@ -1,4 +1,4 @@
-#import "@preview/optimal-resume:0.1.1": *
+#import "@preview/optimal-resume:0.1.2": *
 
 #show: project
 
