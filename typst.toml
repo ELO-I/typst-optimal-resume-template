@@ -19,9 +19,9 @@ exclude = [
   "scripts",
   "tests",
   ".typstignore",
-  "Justfile"
+  "Justfile",
   "thumbnail-dark.svg",
-  "thumbnail-light.svg",
+  "thumbnail-light.svg"
 ]
 
 [template]
