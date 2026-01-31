@@ -11,7 +11,7 @@ Optimized to be compact, easy to maintain and compatible with ATS systems.
 2. **`main.typ`**: An example file showing how to use the template.
 
 ## Sample 
-![Sample](thumbnail.png)
+![Linus Torvalds' resume, built using optimal-resume template, A minimalist resume template featuring bold sans-serif headers and a classic serif body. The layout is optimized for ATS and readability with a clean, single-column flow and precise horizontal alignment for dates and locations.](thumbnail.png)
 
 ## Quick Start
 
